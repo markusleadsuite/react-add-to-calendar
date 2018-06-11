@@ -52,7 +52,7 @@ export default class ReactAddToCalendar extends React.Component {
 
   handleDropdownLinkClick(e) {
     const isIos = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-
+    console.log("Check if Ios");
     // If we're on iOS, allow the URL to open naturally
     if (isIos) {
         return true;
